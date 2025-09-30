@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Jane Huang</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Jane Huang</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img class="round-pic" src="./assets/profile.jpg" alt="Jane Huang Profile Picture" />
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Jane Huang</h1>
+            <p class="section__text__p2">Software Developer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/Resume_Aijing Huang_2026.2.pdf')">Download CV</button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
+            </div>
+            <div id="socials-container">
+                <img 
+                    src="./assets/linkedin.png" 
+                    alt="My LinkedIn profile"
+                    class="icon"
+                    onclick="location.href='https://www.linkedin.com/in/janeajhuang/'"
+                />
+                <img 
+                    src="./assets/github.png" 
+                    alt="My GitHub profile"
+                    class="icon"
+                    onclick="location.href='https://www.linkedin.com/in/janeajhuang/'"
+                />
+            </div>
+        </div>
+        <img src="./assets/down-arrow.svg" class="icon arrow" alt="Down Arrow" onclick="location.href='#about'"/>
+    </section>
+    <section id="about">
+        <p class="section__text__p1">Get To Know</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <!-- <div class="section__pic-container">
+                <img src="./assets/about-pic.png" alt="Jane Huang Profile Picture" />
+            </div> -->
+            <p class="section__text__p3">I am a master's student in Computer Science, aspiring to build a career as a software engineer. I have hands-on experience with Python, Java, C, HTML, CSS, JavaScript, and databases, and a solid foundation in both front-end and back-end development. Prior to transitioning into tech, I spent seven years in Finance, Tax, and Accounting, where I developed expertise in project management, data analysis, and mentoring. Colleagues and supervisors know me as a driven, resourceful professional with a proactive mindset and strong work ethic. I am currently seeking internship or co-op opportunities where I can leverage my diverse background and technical skills to contribute to innovative projects in the tech industry.</p>
+        </div>
+        <img src="./assets/down-arrow.svg" class="icon arrow" alt="Down Arrow" onclick="location.href='#experience'"/>
+    </section>
+    <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-container">
+            <div class="experience-details-container">
+                <p class="section__text__p2">Languages</p>
+                <div class="article-container">
+                    <article class="article">
+                        <img 
+                            src="./assets/checkmark.png"
+                            alt="Experience icon"
+                            class="icon"
+                        />
+                        <h3>Java</h3>
+                    </article>
+                    <article class="article">
+                        <img 
+                            src="./assets/checkmark.png"
+                            alt="Experience icon"
+                            class="icon"
+                        />
+                        <h3>Python</h3>
+                    </article>
+                    <article class="article">
+                        <img 
+                            src="./assets/checkmark.png"
+                            alt="Experience icon"
+                            class="icon"
+                        />
+                        <h3>JavaScrpt</h3>
+                    </article>
+                    <article class="article">
+                        <img 
+                            src="./assets/checkmark.png"
+                            alt="Experience icon"
+                            class="icon"
+                        />
+                        <h3>C#</h3>
+                    </article>
+                    <article class="article">
+                        <img 
+                            src="./assets/checkmark.png"
+                            alt="Experience icon"
+                            class="icon"
+                        />
+                        <h3>HTML</h3>
+                    </article>
+                    <article class="article">
+                        <img 
+                            src="./assets/checkmark.png"
+                            alt="Experience icon"
+                            class="icon"
+                        />
+                        <h3>CSS</h3>
+                    </article>
+                    <article class="article">
+                        <img 
+                            src="./assets/checkmark.png"
+                            alt="Experience icon"
+                            class="icon"
+                        />
+                        <h3>SQL</h3>
+                    </article>
+                </div>
+            </div>
+            <div class="experience-details-container">
+                <p class="section__text__p2">Tools and Applications</p>
+                <div class="article-container">
+                    <article class="article">
+                        <img 
+                            src="./assets/checkmark.png"
+                            alt="Experience icon"
+                            class="icon"
+                        />
+                        <div>
+                            <h3>Cloud & DevOps</h3>
+                            <p>AWS, Firebase, Docker</p>
+                        </div>
+                    </article>
+                    <article class="article">
+                        <img 
+                            src="./assets/checkmark.png"
+                            alt="Experience icon"
+                            class="icon"
+                        />
+                        <div>
+                            <h3>Version Control</h3>
+                            <p>Git, GitHub</p>
+                        </div>
+                    </article>
+                    <article class="article">
+                        <img 
+                            src="./assets/checkmark.png"
+                            alt="Experience icon"
+                            class="icon"
+                        />
+                        <div>
+                            <h3>IDEs</h3>
+                            <p>IntelliJ, VS Code, Android Studio</p>
+                        </div>
+                    </article>
+                    <article class="article">
+                        <img 
+                            src="./assets/checkmark.png"
+                            alt="Experience icon"
+                            class="icon"
+                        />
+                        <div>
+                            <h3>Data & Notebooks</h3>
+                            <p>Jupiter Notebook, Google Colab</p>
+                        </div>
+                    </article>
+                    <article class="article">
+                        <img 
+                            src="./assets/checkmark.png"
+                            alt="Experience icon"
+                            class="icon"
+                        />
+                        <div>
+                            <h3>Databases</h3>
+                            <p>MySQL, PostgreSQL, MangoDB</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+            <div class="experience-details-container">
+                <p class="section__text__p2">Related Courses</p>
+                <div class="article-container">
+                    <article class="article">
+                        <img 
+                            src="./assets/checkmark.png"
+                            alt="Experience icon"
+                            class="icon"
+                        />
+                        <h3>Object-Oriented Design</h3>
+                    </article>
+                    <article class="article">
+                        <img 
+                            src="./assets/checkmark.png"
+                            alt="Experience icon"
+                            class="icon"
+                        />
+                        <h3>Data Structure and Algorithms</h3>
+                    </article>
+                    <article class="article">
+                        <img 
+                            src="./assets/checkmark.png"
+                            alt="Experience icon"
+                            class="icon"
+                        />
+                        <h3>Database Management System</h3>
+                    </article>
+                    <article class="article">
+                        <img 
+                            src="./assets/checkmark.png"
+                            alt="Experience icon"
+                            class="icon"
+                        />
+                        <h3>Fundamentals Cloud Computing</h3>
+                    </article>
+                    <article class="article">
+                        <img 
+                            src="./assets/checkmark.png"
+                            alt="Experience icon"
+                            class="icon"
+                        />
+                        <h3>Fundamentals Computer Networks</h3>
+                    </article>
+                    <article class="article">
+                        <img 
+                            src="./assets/checkmark.png"
+                            alt="Experience icon"
+                            class="icon"
+                        />
+                        <h3>Mobile Application Development</h3>
+                    </article>
+                </div>  
+            </div>
+        </div>
+        <img src="./assets/down-arrow.svg" class="icon arrow" alt="Down Arrow" onclick="location.href='#projects'"/>
+    </section>
+    <section id="projects">
+        <p class="section__text__p1">Browse My</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-container">
+            <div class="experience-details-container">
+                <div class="project-item">
+                    <img 
+                        class="project-img"
+                        src="./assets/project-1.png"
+                        alt="Project 1 img"
+                    />
+                    <p class="section__text__p1">SmartSpendMax - Android Mobile Application</p>
+                    <button class="btn btn-color-1 btn-center" onclick="location.href='https://github.com/JaneH99/SmartSpendMax'">Github</button>
+                </div>
+            </div>
+            <div class="experience-details-container">
+                <div class="project-item">
+                    <img 
+                        class="project-img"
+                        src="./assets/project-2.png"
+                        alt="Project 2 img"
+                    />
+                    <p class="section__text__p1">Theater Reservation in Java (MVC)</p>
+                    <button class="btn btn-color-1 btn-center">Github</button>
+                </div>
+            </div>
+            <div class="experience-details-container">
+                <div class="project-item">
+                    <img 
+                        class="project-img"
+                        src="./assets/project-3.png"
+                        alt="Project 3 img"
+                    />
+                    <p class="section__text__p1">Pokémon Sticker Rewards Website</p>
+                    <button class="btn btn-color-1 btn-center">Github</button>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/down-arrow.svg" class="icon arrow" alt="Down Arrow" onclick="location.href='#contact'"/>
+    </section>
+    <section id="contact">
+        <p class="section__text__p1">Get In Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-container">
+            <div class="contact-detail-container">
+                <img
+                    class="contact-img"
+                    src="./assets/email.png"
+                    alt="email icon"
+                />
+                <a href="mailto:janehuang0314@gmail.com">janehuang0314@gmail.com</a>
+            </div>
+            <div class="contact-detail-container">
+                <img
+                    class="contact-img"
+                    src="./assets/linkedin.png"
+                    alt="LinkedIn icon"
+                />
+                <a href="https://www.linkedin.com/in/janeajhuang/">LinkedIn</a>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer">
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
